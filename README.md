@@ -1,12 +1,17 @@
 # SkillOrgDevOps
 
-Install terraform
-Install AWS CLI
+Steps:
 
-#Set AWS config to deploy, 
-aws configure
-make sure user has correct roles
+1. Install terraform
+2. Install AWS CLI
 
-terraform init
-terraform apply -var="postgres_password="
+##Set AWS config to deploy
+: 
+1. aws configure
+2. make sure user has correct roles
+
+## Terraform Script
+:
+1. terraform init
+2. terraform apply -var="postgres_password="
 
