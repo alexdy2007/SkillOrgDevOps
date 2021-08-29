@@ -117,7 +117,7 @@ resource "aws_security_group" "allow_postgres_to_home" {
       prefix_list_ids = null
       security_groups = null
       self = null
-      cidr_blocks      = ["86.0.92.17/32"]
+      cidr_blocks      = ["/32"]
     },
     {
       description      = "SSH from VPC to home"
@@ -128,7 +128,7 @@ resource "aws_security_group" "allow_postgres_to_home" {
       prefix_list_ids = null
       security_groups = null
       self = null
-      cidr_blocks      = ["86.0.92.17/32"]
+      cidr_blocks      = ["/32"]
     }
   ]
 
