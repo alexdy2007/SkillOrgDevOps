@@ -58,7 +58,7 @@ resource "aws_rds_cluster" "postgresql_skillorg" {
   db_subnet_group_name    = module.skillorg_network.rds_subnet_group_name
   database_name           = "skillorg"
   master_username         = "postgres"
-  master_password         = "MYSUPERsecret"
+  master_password         = var.postgres_password
   backup_retention_period = 1
   skip_final_snapshot = true
   vpc_security_group_ids = [module.skillorg_network.aws_security_group_all_postgres_id]
